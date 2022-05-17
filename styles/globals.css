@@ -14,3 +14,32 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.icon-s {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  overflow: hidden;
+}
+
+.icon-m {
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: -0.225em;
+  overflow: hidden;
+}
+
+.icon-l {
+  width: 2.25em;
+  height: 2.25em;
+  vertical-align: -0.3em;
+  overflow: hidden;
+}
+
+.icon-primary {
+  fill: darkgray;
+}
+
+.icon-secondary {
+  fill: rosybrown
+}
