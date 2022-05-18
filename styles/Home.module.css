@@ -12,9 +12,15 @@
 }
 
 .complexIcon > circle {
-  fill: blue
+  fill: green
 }
 
 .complexIcon > path:last-of-type {
-  fill: black
+  fill: orange
+}
+
+.list div {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
 }

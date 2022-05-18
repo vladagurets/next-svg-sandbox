@@ -17,8 +17,8 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <div>
-          <h2>Sizes</h2>
+        <div className={styles.list}>
+          <h2>Sizing</h2>
           <div>
             <PhotoshopSVG className={IconSize.S} />
             <code>{'<Icon className={IconSize.S} />'}</code>
@@ -32,26 +32,26 @@ const Home: NextPage = () => {
             <code>{'<Icon className={IconSize.L} />'}</code>
           </div>
         </div>
-        <div>
-          <h2>Colors</h2>
+        <div className={styles.list}>
+          <h2>Filling</h2>
           <div>
             <PhotoshopSVG className={IconSize.M} fill="blue" />
-            <code>{'<Icon className={IconSize.M} fill="blue" />'}</code>
+            <code>{'<Icon fill="blue" />'}</code>
           </div>
           <div>
             <PhotoshopSVG className={IconSize.M} fill="red" />
-            <code>{'<Icon className={IconSize.M} fill="red" />'}</code>
+            <code>{'<Icon fill="red" />'}</code>
           </div>
           <div>
             <PhotoshopSVG className={cn(IconSize.M, IconColor.PRIMARY)} />
-            <code>{'<Icon className={cn(IconSize.M, IconColor.PRIMARY)} />'}</code>
+            <code>{'<Icon className={IconColor.PRIMARY} />'}</code>
           </div>
           <div>
             <PhotoshopSVG className={cn(IconSize.M, IconColor.SECONDARY)} />
-            <code>{'<Icon className={cn(IconSize.M, IconColor.SECONDARY)} />'}</code>
+            <code>{'<Icon className={IconColor.SECONDARY} />'}</code>
           </div>
         </div>
-        <div>
+        <div className={styles.list}>
           <h2>Complex icons</h2>
           <div>
             <ComplexSVG />
@@ -62,15 +62,22 @@ const Home: NextPage = () => {
             <code>{'<Icon className="my-complex-icon" />'}</code>
           </div>
         </div>
-
-       <div>
-          <h2>What we need to do?</h2>
+        <div>
+          <h2>What do we need?</h2>
           <ol>
             <li>Add babel-plugin-inline-react-svg</li>
             <li>Add svgs to repo</li>
-            <li>Use global config for sizes/styles </li>
+            <li>Prepare reusable configs for icons</li>
           </ol>
-       </div>
+        </div>
+        <div>
+          <h2>Why?</h2>
+          <ol>
+            <li>Do not need to test and support another project</li>
+            <li>Do not need to present svg file as tsx file</li>
+            <li>Easier usage: just copy image to project. No need in extra scripting</li>
+          </ol>
+        </div>
       </main>
     </div>
   )
