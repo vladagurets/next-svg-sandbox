@@ -3,7 +3,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { ReactComponent as PhotoshopSVG } from '../public/icons/adobephotoshop.svg'
 import { ReactComponent as ComplexSVG } from '../public/icons/complexicon.svg'
-import { IconColor, IconSize } from './icon.config'
+import { IconColorClassName, IconSizeClassName } from './icon.config'
 import cn from 'classnames'
 
 
@@ -20,35 +20,35 @@ const Home: NextPage = () => {
         <div className={styles.list}>
           <h2>Sizing</h2>
           <div>
-            <PhotoshopSVG className={IconSize.S} />
-            <code>{'<Icon className={IconSize.S} />'}</code>
+            <PhotoshopSVG className={IconSizeClassName.S} />
+            <code>{'<Icon className={IconSizeClassName.S} />'}</code>
           </div>
           <div>
-            <PhotoshopSVG className={IconSize.M} />
-            <code>{'<Icon className={IconSize.M} />'}</code>
+            <PhotoshopSVG className={IconSizeClassName.M} />
+            <code>{'<Icon className={IconSizeClassName.M} />'}</code>
           </div>
           <div>
-            <PhotoshopSVG className={IconSize.L} />
-            <code>{'<Icon className={IconSize.L} />'}</code>
+            <PhotoshopSVG className={IconSizeClassName.L} />
+            <code>{'<Icon className={IconSizeClassName.L} />'}</code>
           </div>
         </div>
         <div className={styles.list}>
           <h2>Filling</h2>
           <div>
-            <PhotoshopSVG className={IconSize.M} fill="blue" />
+            <PhotoshopSVG className={IconSizeClassName.M} fill="blue" />
             <code>{'<Icon fill="blue" />'}</code>
           </div>
           <div>
-            <PhotoshopSVG className={IconSize.M} fill="red" />
+            <PhotoshopSVG className={IconSizeClassName.M} fill="red" />
             <code>{'<Icon fill="red" />'}</code>
           </div>
           <div>
-            <PhotoshopSVG className={cn(IconSize.M, IconColor.PRIMARY)} />
-            <code>{'<Icon className={IconColor.PRIMARY} />'}</code>
+            <PhotoshopSVG className={cn(IconSizeClassName.M, IconColorClassName.PRIMARY)} />
+            <code>{'<Icon className={IconColorClassName.PRIMARY} />'}</code>
           </div>
           <div>
-            <PhotoshopSVG className={cn(IconSize.M, IconColor.SECONDARY)} />
-            <code>{'<Icon className={IconColor.SECONDARY} />'}</code>
+            <PhotoshopSVG className={cn(IconSizeClassName.M, IconColorClassName.SECONDARY)} />
+            <code>{'<Icon className={IconColorClassName.SECONDARY} />'}</code>
           </div>
         </div>
         <div className={styles.list}>
@@ -73,7 +73,7 @@ const Home: NextPage = () => {
         <div>
           <h2>Why?</h2>
           <ol>
-            <li>Do not need to test and support another project</li>
+            <li>Do not need to test and support another codebase</li>
             <li>Do not need to present svg file as tsx file</li>
             <li>Easier usage: just copy image to project. No need in extra scripting</li>
           </ol>

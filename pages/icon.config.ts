@@ -1,10 +1,10 @@
-export enum IconSize {
+export enum IconSizeClassName {
   S = 'icon-s',
   M = 'icon-m',
   L = 'icon-l'
 }
 
-export enum IconColor {
+export enum IconColorClassName {
   PRIMARY = 'icon-primary',
   SECONDARY = 'icon-secondary',
 }
