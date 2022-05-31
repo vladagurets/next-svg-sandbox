@@ -1,5 +1,5 @@
 .main {
-  width: 70%;
+  width: 85%;
   margin: 20px auto;
 }
 
@@ -23,4 +23,36 @@
   margin-bottom: 5px;
   display: flex;
   align-items: center;
+}
+
+.list code {
+  font-size: 10px;
+}
+
+.lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.customComplexIcon-0 {
+  stroke: blue;
+}
+
+.customComplexIcon-0 path {
+  fill: red;
+}
+
+.customComplexIcon-1 {
+  fill: red;
+  stroke: red;
+}
+
+.customComplexIcon-1 path {
+  fill: green;
+}
+
+.customComplexIcon-2 circle {
+  fill: blue
 }

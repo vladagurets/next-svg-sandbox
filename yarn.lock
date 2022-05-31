@@ -233,10 +233,10 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
 
-"@betterme-dev/web-ui-kit@0.15.1-beta.0":
-  version "0.15.1-beta.0"
-  resolved "https://npm.pkg.github.com/download/@betterme-dev/web-ui-kit/0.15.1-beta.0/68e55edf98af97b3e5010b286f65decf6d442103bb60d3cc92eb7e35e1545399#b0c4df08dc5e9398d4539ec620280ce01b39acaf"
-  integrity sha512-lpuXXLbp/RfVvtIHPt5Jz7POKuU1s3iZoNvsV3N/m8kehxn5FOMIUbkKyHuqUDfPecYoH+GtWSFQQja9uoAFLQ==
+"@betterme-dev/web-ui-kit@0.15.1-beta.1":
+  version "0.15.1-beta.1"
+  resolved "https://npm.pkg.github.com/download/@betterme-dev/web-ui-kit/0.15.1-beta.1/10bdb20337651e61b4fe5b10b9cce9a20af8a688dc6beb8e35c2aeca408ed70f#3265ffbe5b3a3f94199b68d87cea9f0862e8df87"
+  integrity sha512-NMysgKJaMfhQUYIyFpWOx9CB6XZeTBp0Hut8gfV+uV1/2996A6F1nz55N1XxqwCFKTl1qClRJ/aXTWwpdZLSFw==
   dependencies:
     chromatic "^5.9.2"
     classnames "^2.2.6"
